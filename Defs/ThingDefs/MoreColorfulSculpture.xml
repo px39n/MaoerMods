@@ -1,0 +1,181 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+
+	<ThingDef Name="RIKBuildingBase" Abstract="True">
+		<category>Building</category>
+		<thingClass>Building</thingClass>
+		<soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
+		<selectable>true</selectable>
+		<drawerType>MapMeshAndRealTime</drawerType>
+		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+		<repairEffect>Repair</repairEffect>
+		<leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
+		<filthLeaving>Filth_RubbleBuilding</filthLeaving>
+				<minifiedDef>MinifiedThing</minifiedDef>
+		<thingCategories>
+			<li>BuildingsFurniture</li>
+		</thingCategories>
+	</ThingDef>
+
+
+
+	<ThingDef ParentName="RIKBuildingBase" Name="RIKSculptureBase" Abstract="True">
+		<thingClass>Building_Art</thingClass>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<pathCost>70</pathCost>
+		<castEdgeShadows>true</castEdgeShadows>
+		<useHitPoints>true</useHitPoints>
+		<statBases>
+			<Flammability>1.0</Flammability>
+		</statBases>
+		<comps>
+			<li>
+				<compClass>CompQuality</compClass>
+			</li>
+			<li Class="CompProperties_Art">
+				<nameMaker>NamerArtSculpture</nameMaker>
+				<descriptionMaker>ArtDescription_Sculpture</descriptionMaker>
+				<canBeEnjoyedAsArt>true</canBeEnjoyedAsArt>
+			</li>
+		</comps>
+		<inspectorTabs>
+			<li>ITab_Art</li>
+		</inspectorTabs>
+		<recipeMaker>
+			<workSpeedStat>SculptingSpeed</workSpeedStat>
+			<workSkill>Artistic</workSkill>
+			<unfinishedThingDef>UnfinishedSculpture</unfinishedThingDef>
+			<effectWorking>Sculpt</effectWorking>
+			<soundWorking>Recipe_Sculpt</soundWorking>
+			<recipeUsers>
+				<li>TableSculpting</li>
+			</recipeUsers>
+			<defaultIngredientFilter>
+				<categories>
+					<li>Root</li>
+				</categories>
+				<disallowedThingDefs>
+					<li>Gold</li>
+					<li>Silver</li>
+					<li>Plasteel</li>
+					<li>Jade</li>
+					<li>Uranium</li>
+				</disallowedThingDefs>
+			</defaultIngredientFilter>
+		</recipeMaker>
+	</ThingDef>
+<!-- ======================================== Art ============================================== -->
+
+
+	<ThingDef ParentName="RIKSculptureBase">
+		<defName>KAROMUF</defName>
+		<label>KAROMUF sculpture</label>
+		<researchPrerequisites>
+			<li>ComplexFurniture</li>
+		</researchPrerequisites>
+		<uiIconPath>Things/Art/KAROMUF_MenuIcon</uiIconPath>
+		<description>KAROMUF sculpture
+
+The holy KAROMUFF is a creature worshiped 
+by the Cheda of the Indigo Gerbil Tribe
+on Alioth Posterius.</description>
+		<graphicData>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<texPath>Things/Art/KAROMUF</texPath>
+			<drawSize>(3,3)</drawSize>
+		</graphicData>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<fillPercent>0.5</fillPercent>
+		<rotatable>true</rotatable>
+		<statBases>
+			<MaxHitPoints>280</MaxHitPoints>
+			<Beauty>180</Beauty>
+			<WorkToMake>70000</WorkToMake>
+			<Mass>300</Mass>
+		</statBases>
+		<size>(2,2)</size>
+		<stuffCategories>
+			<li>Metallic</li>
+			<li>Woody</li>
+			<li>Stony</li>
+		</stuffCategories>
+		<costStuffCount>300</costStuffCount>
+	</ThingDef>
+
+
+	<ThingDef ParentName="RIKSculptureBase">
+		<defName>SMOERTIGE</defName>
+		<label>SMOERTIGE sculpture</label>
+		<uiIconPath>Things/Art/SMOERTIGE_MenuIcon</uiIconPath>
+		<researchPrerequisites>
+			<li>ComplexFurniture</li>
+		</researchPrerequisites>
+		<description>SMOERTIGE sculpture
+
+This stunning statue is a likeness
+of "Anha the Graceful" a matriarch of 
+the Gray People Tribe known to be
+a dazzling and exquisite beauty.</description>
+		<graphicData>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<texPath>Things/Art/SMOERTIGE</texPath>
+			<drawSize>(3,3)</drawSize>
+		</graphicData>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<fillPercent>0.5</fillPercent>
+		<rotatable>true</rotatable>
+		<statBases>
+			<MaxHitPoints>170</MaxHitPoints>
+			<Beauty>100</Beauty>
+			<WorkToMake>35000</WorkToMake>
+			<Mass>90</Mass>
+		</statBases>
+		<stuffCategories>
+			<li>Metallic</li>
+			<li>Woody</li>
+			<li>Stony</li>
+		</stuffCategories>
+		<costStuffCount>140</costStuffCount>
+	</ThingDef>
+
+
+	<ThingDef ParentName="RIKSculptureBase">
+		<defName>LORDOKI</defName>
+		<label>LORDOKI sculpture</label>
+		<uiIconPath>Things/Art/LORDOKI_MenuIcon</uiIconPath>
+		<researchPrerequisites>
+			<li>ComplexFurniture</li>
+		</researchPrerequisites>
+		<description>LORDOKI sculpture
+
+This statue depicts the wolf-like god
+named "LORDOKI", worshiped by the
+Purple Lobster Crouca on Aldhafera XI</description>
+		<graphicData>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<texPath>Things/Art/LORDOKI</texPath>
+			<drawSize>(3,3)</drawSize>
+		</graphicData>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<fillPercent>0.5</fillPercent>
+		<rotatable>true</rotatable>
+		<statBases>
+			<MaxHitPoints>170</MaxHitPoints>
+			<Beauty>85</Beauty>
+			<WorkToMake>35000</WorkToMake>
+			<Mass>90</Mass>
+		</statBases>
+		<size>(1,2)</size>
+		<stuffCategories>
+			<li>Metallic</li>
+			<li>Woody</li>
+			<li>Stony</li>
+		</stuffCategories>
+		<costStuffCount>140</costStuffCount>
+	</ThingDef>
+
+
+
+</Defs>

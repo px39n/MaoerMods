@@ -168,11 +168,11 @@
 
 
 	<ThingDef ParentName="TBedBase">
-		<defName>BedBlue</defName>
-		<label>床)</label>
-		<description>A cozy mattress and blue sheets on a frame for resting.</description>
+		<defName>sheep_singlebed</defName>
+		<label>咩咩床</label>
+		<description>咩咩咩咩咩咩咩咩咩咩咩咩咩咩咩咩咩咩咩咩咩咩咩咩咩咩咩咩咩咩咩咩咩咩咩咩咩咩.</description>
     <graphicData>
-      <texPath>Things/Building/BedBlue</texPath>
+      <texPath>Things/Building/sheep_singlebed</texPath>
     </graphicData>
 	</ThingDef>
 	
