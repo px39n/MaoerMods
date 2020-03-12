@@ -170,7 +170,7 @@
 	<ThingDef ParentName="TBedBase">
 		<defName>BedBlue</defName>
 		<label>床)</label>
-		<description>A coz的y mattress and blue sheets on a frame for resting.</description>
+		<description>A cozy mattress and blue sheets on a frame for resting.</description>
     <graphicData>
       <texPath>Things/Building/BedBlue</texPath>
     </graphicData>
@@ -178,8 +178,8 @@
 	
 	<ThingDef ParentName="TDoubleBedBase">
 		<defName>DoubleBedRed</defName>
-		<label>double bed (red)</label>
-		<description>A simple double-wide bed that fits two people. Red sheets.</description>
+		<label>LoveBed</label>
+		<description>芙蓉爱心双人床</description>
     <graphicData>
       <texPath>Things/Building/DoubleBedRed</texPath>
     </graphicData>
