@@ -25,7 +25,7 @@
 		<altitudeLayer>Building</altitudeLayer>
 		<passability>PassThroughOnly</passability>
 		<pathCost>70</pathCost>
-		<castEdgeShadows>true</castEdgeShadows>
+		<castEdgeShadows>false</castEdgeShadows>
 		<useHitPoints>true</useHitPoints>
 		<statBases>
 			<Flammability>1.0</Flammability>
@@ -188,7 +188,7 @@ Purple Lobster Crouca on Aldhafera XI</description>
 		<graphicData>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<texPath>Things/Art/LZHSulpture</texPath>
-			<drawSize>(3,5)</drawSize>
+			<drawSize>(1,2)</drawSize>
 		</graphicData>
 		<minifiedDef>MinifiedThing</minifiedDef>
 		<fillPercent>0.5</fillPercent>
@@ -199,7 +199,7 @@ Purple Lobster Crouca on Aldhafera XI</description>
 			<WorkToMake>35000</WorkToMake>
 			<Mass>90</Mass>
 		</statBases>
-		<size>(2,4)</size>
+		<size>(1,2)</size>
 		<stuffCategories>
 			<li>Metallic</li>
 			<li>Woody</li>
