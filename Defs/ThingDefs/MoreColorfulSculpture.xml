@@ -177,6 +177,37 @@ Purple Lobster Crouca on Aldhafera XI</description>
 		<costStuffCount>140</costStuffCount>
 	</ThingDef>
 
+	<ThingDef ParentName="RIKSculptureBase">
+		<defName>LZHSCULPTURE</defName>
+		<label>JFDSPG</label>
+		<uiIconPath>Things/Art/LZHSulpture_MenuIcon</uiIconPath>
+		<researchPrerequisites>
+			<li>ComplexFurniture</li>
+		</researchPrerequisites>
+		<description>XXXXXXXX</description>
+		<graphicData>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<texPath>Things/Art/LZHSulpture</texPath>
+			<drawSize>(3,5)</drawSize>
+		</graphicData>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<fillPercent>0.5</fillPercent>
+		<rotatable>true</rotatable>
+		<statBases>
+			<MaxHitPoints>170</MaxHitPoints>
+			<Beauty>85</Beauty>
+			<WorkToMake>35000</WorkToMake>
+			<Mass>90</Mass>
+		</statBases>
+		<size>(2,4)</size>
+		<stuffCategories>
+			<li>Metallic</li>
+			<li>Woody</li>
+			<li>Stony</li>
+		</stuffCategories>
+		<costStuffCount>140</costStuffCount>
+	</ThingDef>
+
 
 
 </Defs>
