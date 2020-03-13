@@ -84,7 +84,7 @@ on Alioth Posterius.</description>
 		<graphicData>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<texPath>Things/Art/KAROMUF</texPath>
-			<drawSize>(3,3)</drawSize>
+			<drawSize>(4,4)</drawSize>
 		</graphicData>
 		<minifiedDef>MinifiedThing</minifiedDef>
 		<fillPercent>0.5</fillPercent>
@@ -121,7 +121,7 @@ a dazzling and exquisite beauty.</description>
 		<graphicData>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<texPath>Things/Art/SMOERTIGE</texPath>
-			<drawSize>(3,3)</drawSize>
+			<drawSize>(3,4)</drawSize>
 		</graphicData>
 		<minifiedDef>MinifiedThing</minifiedDef>
 		<fillPercent>0.5</fillPercent>
@@ -132,6 +132,7 @@ a dazzling and exquisite beauty.</description>
 			<WorkToMake>35000</WorkToMake>
 			<Mass>90</Mass>
 		</statBases>
+		<size>(1,2)</size>
 		<stuffCategories>
 			<li>Metallic</li>
 			<li>Woody</li>
