@@ -68,8 +68,8 @@
       <Flammability>1.0</Flammability>
       <WorkToBuild>1500</WorkToBuild>
       <Mass>85</Mass>
-      <Comfort>0.75</Comfort>
-      <Beauty>2</Beauty>
+      <Comfort>0.95</Comfort>
+      <Beauty>20</Beauty>
       <BedRestEffectiveness>1</BedRestEffectiveness>
       <ImmunityGainSpeedFactor>1.07</ImmunityGainSpeedFactor>
       <SurgerySuccessChanceFactor>1</SurgerySuccessChanceFactor>
@@ -80,7 +80,7 @@
       <li>Woody</li>
       <li>Stony</li>
     </stuffCategories>
-    <costStuffCount>85</costStuffCount>
+    <costStuffCount>50</costStuffCount>
     <building>
       <bed_showSleeperBody>False</bed_showSleeperBody>
       <bed_healPerDay>4</bed_healPerDay>
@@ -171,10 +171,28 @@
 		<defName>sheep_singlebed</defName>
 		<label>咩咩床</label>
 		<description>咩咩咩咩咩咩咩咩咩咩咩咩咩咩咩咩咩咩咩咩咩咩咩咩咩咩咩咩咩咩咩咩咩咩咩咩咩咩.</description>
+		<statBases>
+			<Beauty>15</Beauty>
+			<Comfort>0.9</Comfort>
+		</statBases>
     <graphicData>
       <texPath>Things/Building/sheep_singlebed</texPath>
     </graphicData>
 	</ThingDef>
+	
+	
+	<ThingDef ParentName="TBedBase">
+		<defName>SS_Labor_bed</defName>
+		<label>劳工床</label>
+		<description>劳动人民的床，可以快速休息.</description>
+		<statBases>
+			<BedRestEffectiveness>2.5</BedRestEffectiveness>
+		</statBases>
+    <graphicData>
+      <texPath>Things/Building/LaborBed</texPath>
+    </graphicData>
+	</ThingDef>
+	
 	
 	<ThingDef ParentName="TDoubleBedBase">
 		<defName>DoubleBedRed</defName>
@@ -184,5 +202,14 @@
       <texPath>Things/Building/DoubleBedRed</texPath>
     </graphicData>
 	</ThingDef>
-
+	
+	<ThingDef ParentName="TDoubleBedBase">
+		<defName>SS_WarmBed</defName>
+		<label>温馨双人床</label>
+		<description>舒适而温馨的双人床</description>
+    <graphicData>
+      <texPath>Things/Building/WarmBed</texPath>
+    </graphicData>
+	</ThingDef>
+	
 </Defs>
